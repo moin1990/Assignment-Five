@@ -16,3 +16,15 @@ Question 3.What is the difference between map(), filter(), and forEach()?
 Answer:
 
 map(), filter(), and forEach() are array iteration methods in JavaScript. map() transforms each element and returns a new array of the same length. filter() returns a new array containing elements that match a condition. forEach() simply loops through the array and performs an action, but does not return a new array.
+
+Question 4. What is an arrow function?
+
+Answer:
+
+An arrow function is a shorter way to write functions in JavaScript using the => syntax. It was introduced in ES6 and provides a more concise syntax. Arrow functions also do not have their own this; instead, they inherit this from the surrounding scope.
+
+Question 5. What are template literals?
+
+Answer:
+
+Template literals in JavaScript are strings defined using backticks (`). They allow string interpolation using ${}, multi-line strings, and embedded expressions, making string creation easier and more readable.
