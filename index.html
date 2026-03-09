@@ -11,6 +11,52 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+        <!--Login Page-->
+    <div id="login-page">
     
+        <div class="login-card">
+            <div class="login-logo">
+                <img src="./image/github-logo.png" alt="">
+                <h2>GitHub Issues Tracker</h2>
+                <p>Sign in to manage your issues</p>
+            </div>
+          
+            <div class="field-group">
+                <label for="username">Username</label>
+                <input id="username" type="text" placeholder="Enter Username"/>
+                <div class="field-hint">Default: admin</div>
+                <div class="error-msg" id="err-user">Please enter your username</div>
+            </div>
+          
+            <div class="field-group">
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Enter Password"/>
+                <div class="field-hint">Default: admin123</div>
+                <div class="error-msg" id="err-pass">Please enter your password</div>
+            </div>
+          
+            <div class="error-msg" id="err-creds" style="margin-bottom:8px;font: size 14px;">
+                Invalid credentials. Use admin / admin123
+            </div>
+          
+            <button id="btn-signin" onclick="handleLogin()">Sign In</button>
+        
+            
+            <div class="divider">
+                <span class="divider-line"></span>
+                OR
+                <span class="divider-line"></span>
+            </div>
+          
+            <div class="demo-box">
+                <p>Demo Credentials:</p>
+                <div class="demo-credits">
+                  <span>Username:</span> admin<br>
+                  <span>Password:</span> admin123
+                </div>
+            </div>
+        </div>
+    </div>
+        
 </body>
 </html>
