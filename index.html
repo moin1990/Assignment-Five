@@ -58,5 +58,58 @@
         </div>
     </div>
         
+        <!-- Main Page -->
+    
+    <div id="main-page">
+        <nav id="navbar">
+            <a href="#" class="nav-brand">
+                <img src="./image/github-logo.png" alt="" >
+                <span>GitHub Issues Tracker</span>
+            </a>
+            <div class="nav-right">
+                <div class="search-wrap">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input id="search-input" type="text" placeholder="Search issues…" />
+                </div>
+                <button class="btn-new">
+                  <i class="fa-solid fa-plus"></i>
+                  <span class="btn-new-label">New Issue</span>
+                </button>
+            </div>
+        </nav>
+          
+        <main class="main-content">
+            <div class="tab-bar">
+                <button class="tab-btn active" data-tab="all"    onclick="switchTab('all')">All</button>
+                <button class="tab-btn"        data-tab="open"   onclick="switchTab('open')">Open</button>
+                <button class="tab-btn"        data-tab="closed" onclick="switchTab('closed')">Closed</button>
+            </div>
+          
+            <div class="issues-header">
+                <div class="issues-header-left">
+                    <div class="issues-icon">
+                        <img src="./image/Circle.PNG" alt="">
+                    </div>
+                    <div class="issues-count-title">
+                        <h2 id="issue-count">0 Issues</h2>
+                        <p>Track and manage your project issues</p>
+                    </div>
+                </div>
+                <div class="status-legend">
+                  <div class="legend-item"><div class="legend-dot open"></div> Open</div>
+                  <div class="legend-item"><div class="legend-dot closed"></div> Closed</div>
+                </div>
+            </div>
+          
+            <div class="issues-grid-wrap">
+                <div id="issues-container">
+                  <div class="spinner-wrap">
+                    <div class="spinner"></div>
+                    <p class="spinner-text">Loading issues…</p>
+                  </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
